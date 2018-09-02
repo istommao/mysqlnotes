@@ -46,6 +46,19 @@ cmake . -DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
 make install
 ```
 
+```shell
+# 启动mysqld
+cp support-files/mysql.server /lib/systemd/system
+
+systemctl start mysqld
+
+# 查看 mysqld 状态
+systemctl status mysqld
+
+# 客户端
+cp client/mysql /usr/local/bin/
+```
+
 `参数`
 - DCMAKE_INSTALL_PREFIX= 数据库程序安装路径;
 - DMYSQL_DATADIR= 数据库文件存放路径（不配置的话会默认创建$PREFIX_DIR/data）
