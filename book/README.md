@@ -78,3 +78,8 @@ Max_data_length: 0
  Create_options:
         Comment:
 ```
+
+## 扩展阅读
+
+- https://naive.gitbooks.io/database/content/
+- http://www.ruanyifeng.com/blog/2014/07/database_implementation.html
